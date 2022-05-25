@@ -299,7 +299,7 @@
                                 </div> {% endcomment %}
 
                                 <p>
-                                    <a><b>{{ post.user }}</b> {{ post.caption }}</a>
+                                    <a href="{% url 'profile' post.user %}"><b>{{ post.user }}</b> </a> {{ post.caption }}
                                 </p>
 
                                 {% comment %} <div class="border-t pt-4 space-y-4 ">
